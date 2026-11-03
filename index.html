@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Frite – Bar et tabac à Roanne</title>
+<meta name="description" content="La Frite, bar et tabac à Roanne : café à 1,50 €, bière pression, terrasse, jeux FDJ et Parions Sport. Ouvert 7 jours sur 7.">
+<link rel="canonical" href="https://la-frite.roanne.info/">
+<meta property="og:title" content="La Frite – Bar et tabac à Roanne">
+<meta property="og:description" content="Café à 1,50 €, bière pression, tabac et jeux. Ouvert 7j/7.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kofi-418.roanne.info/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"La Frite","url":"https://kofi-418.roanne.info/","addressLocality":"Roanne","servesCuisine":"Café, bar, tabac",
+"openingHours":["Mo,Tu 07:30-19:30","We 07:30-13:00","Th,Fr 07:30-19:30","Sa 08:00-19:30","Su 08:00-13:00"]}
+</script>
+<style>
+:root{
+  --zinc:#f3efe6; --ink:#2e3d45; --soft:#5d6c73; --carotte:#4f7468; --paper:#fcfaf5; --line:#d3dcda; --halo:#c5d6cf;
+  --display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 1.0625rem/1.6 var(--body);color:var(--ink);background:var(--zinc);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--carotte);outline-offset:3px}
+.wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+
+/* barre */
+header{background:var(--ink);color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-block:.9rem;gap:1rem}
+.logo{font:800 1.35rem var(--display);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;gap:1.4rem;font-weight:500;font-size:.98rem}
+nav a{text-decoration:none;opacity:.85}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+
+/* hero */
+.hero{padding:clamp(3rem,9vw,6.5rem) 0 clamp(2.5rem,6vw,4rem)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(2rem,5vw,4rem);align-items:end}
+h1{font:800 clamp(3rem,9vw,6.4rem)/.92 var(--display);letter-spacing:-.035em}
+.lead{margin-top:1.4rem;max-width:34ch;font-size:1.2rem;color:var(--soft)}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--carotte);border-color:var(--carotte);color:#fff}
+.btn.main:hover{background:#3f6055;border-color:#3f6055}
+.btn.alt:hover{background:var(--ink);color:#fff}
+
+/* photo */
+.photo{margin:0;position:relative}
+.photo img{display:block;width:100%;aspect-ratio:16/10;max-height:620px;object-fit:cover;object-position:50% 62%;border-radius:20px;box-shadow:0 14px 0 -4px var(--halo);background:#999}
+.photo figcaption{margin-top:1.1rem;color:var(--soft);font-size:.95rem}
+
+/* sections */
+section{padding:clamp(2.5rem,7vw,4.5rem) 0}
+h2{font:800 clamp(1.9rem,4.5vw,2.8rem)/1.05 var(--display);letter-spacing:-.025em;margin-bottom:1.6rem}
+
+.services{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--line)}
+.services div{padding:1.2rem 1.2rem 1.2rem 0}
+.services h3{font:800 1.25rem var(--display)}
+.services p{color:var(--soft);font-size:.98rem;margin-top:.3rem}
+
+/* tarif façon panneau officiel */
+.panel{background:var(--paper);border:2px solid var(--line);border-radius:20px;padding:clamp(1.2rem,3vw,2rem);max-width:720px;box-shadow:0 14px 0 -4px var(--halo)}
+.panel h3{font:800 1.9rem var(--display);text-align:center;letter-spacing:.04em;padding-bottom:.9rem;border-bottom:2px solid var(--line);margin-bottom:.4rem}
+.panel .row{display:flex;align-items:baseline;gap:.7rem;padding:.55rem 0}
+.panel .name{font-weight:600}
+.panel .qty{color:var(--soft);font-size:.92rem}
+.panel .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-.3rem)}
+.panel .price{font:800 1.3rem var(--display);font-variant-numeric:tabular-nums}
+.panel .foot{margin-top:.8rem;padding-top:.8rem;border-top:2px solid var(--line);color:var(--soft);font-size:.9rem}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.split p.note{color:var(--soft);max-width:36ch}
+
+/* horaires */
+.hours{list-style:none;padding:0;border-top:2px solid var(--line)}
+.hours li{display:flex;justify-content:space-between;gap:1rem;padding:.75rem .4rem;border-bottom:1px solid var(--line)}
+.hours li span:last-child{font-variant-numeric:tabular-nums;font-weight:600}
+.hours li.today{background:var(--ink);color:#fff;border-radius:10px;border-bottom-color:transparent}
+
+/* contact */
+.contact{background:var(--ink);color:#fff}
+.contact h2{color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.contact p{color:#d5e0dc;max-width:38ch}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn:hover{background:#fff;color:var(--ink)}
+footer{padding:1.4rem 0;font-size:.9rem;color:var(--soft)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem}
+
+@media (max-width:820px){
+  .hero .wrap,.split,.contact .wrap{grid-template-columns:1fr}
+  .services{grid-template-columns:1fr 1fr}
+  nav{gap:1rem;font-size:.9rem}
+}
+@media (max-width:480px){.services{grid-template-columns:1fr}.logo{font-size:1.15rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">La Frite</a>
+    <nav aria-label="Navigation principale">
+      <a href="#tarifs">Tarifs</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#contact">Nous trouver</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Café, bar, tabac et jeux.</h1>
+        <p class="lead">Un café à 1,50 €, une bière pression, votre tabac et vos jeux. Au comptoir, en salle ou en terrasse, à Roanne, Place Saint-Étienne.</p>
+        <div class="cta">
+          <a class="btn main" href="#tarifs">Voir les tarifs</a>
+          <a class="btn alt" href="#horaires">Voir les horaires</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <figure class="photo">
+        <img src="facade.jpg" alt="Façade de La Frite avec terrasse et tables en extérieur, vue de jour, ensoleillée">
+        <figcaption>La terrasse et la façade de La Frite.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="services">
+        <div><h3>Café</h3><p>Dès 7h30 en semaine. le café à 1,50€.</p></div>
+        <div><h3>Bar</h3><p>Bière pression, softs, apéritif anisé.</p></div>
+        <div><h3>Tabac</h3><p>Tabac et services de bureau de tabac.</p></div>
+        <div><h3>Jeux</h3><p>FDJ, Illiko et Parions Sport.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tarifs">
+    <div class="wrap split">
+      <div>
+        <h2>Les tarifs</h2>
+        <p class="note">Prix nets affichés au comptoir.</p>
+      </div>
+      <div class="panel" role="table" aria-label="Tarifs des consommations">
+        <h3>TARIF</h3>
+        <div class="row" role="row"><span class="name">Café</span><span class="qty">5 cl</span><span class="dots"></span><span class="price">1,50 €</span></div>
+        <div class="row" role="row"><span class="name">Bière pression</span><span class="qty">25 cl</span><span class="dots"></span><span class="price">3,80 €</span></div>
+        <div class="row" role="row"><span class="name">Bière bouteille</span><span class="qty">25 cl</span><span class="dots"></span><span class="price">3,50 €</span></div>
+        <div class="row" role="row"><span class="name">Jus de fruit</span><span class="qty">20 cl</span><span class="dots"></span><span class="price">3,20 €</span></div>
+        <div class="row" role="row"><span class="name">Soda</span><span class="qty">33 cl</span><span class="dots"></span><span class="price">3,20 €</span></div>
+        <div class="row" role="row"><span class="name">Eau minérale</span><span class="qty">25 cl</span><span class="dots"></span><span class="price">3,00 €</span></div>
+        <div class="row" role="row"><span class="name">Apéritif anisé</span><span class="qty">2 cl</span><span class="dots"></span><span class="price">3,50 €</span></div>
+        <p class="foot">Prix nets, service compris.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="horaires" style="background:var(--paper)">
+    <div class="wrap split">
+      <div>
+        <h2>Les horaires</h2>
+        <p class="note">Le dimanche et les jours fériés, on ouvre de 8h00 à 13h00. Le mercredi, on ferme à 13h00.</p>
+      </div>
+      <ul class="hours" id="hours">
+        <li data-d="1"><span>Lundi</span><span>7h30 – 19h30</span></li>
+        <li data-d="2"><span>Mardi</span><span>7h30 – 19h30</span></li>
+        <li data-d="3"><span>Mercredi</span><span>7h30 – 13h00</span></li>
+        <li data-d="4"><span>Jeudi</span><span>7h30 – 19h30</span></li>
+        <li data-d="5"><span>Vendredi</span><span>7h30 – 19h30</span></li>
+        <li data-d="6"><span>Samedi</span><span>8h00 – 19h30</span></li>
+        <li data-d="0"><span>Dimanche et jours fériés</span><span>8h00 – 13h00</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div>
+        <h2>Passez nous voir</h2>
+        <p>La Frite, café, bar, tabac et jeux à Roanne.</p>
+        <!-- À compléter : adresse exacte -->
+      </div>
+      <div class="cta" style="align-self:end;margin:0">
+        <!-- À compléter : numéro de téléphone et lien Google Maps -->
+        <a class="btn" href="#">Aller sur le site de La Frite</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>L’abus d’alcool est dangereux pour la santé. À consommer avec modération.</span>
+    <span>Revenir sur <a href="https://roanne.info">Roanne.info</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=new Date(),day=d.getDay();
+  var li=document.querySelector('#hours [data-d="'+day+'"]');
+  if(li)li.classList.add("today");
+  document.getElementById("y").textContent=d.getFullYear();
+})();
+</script>
+</body>
+</html>
