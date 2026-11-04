@@ -99,6 +99,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem
 }
 .match{background:var(--paper)}
 .match h2{margin-bottom:0}
+.press{background:var(--paper)}
+.press-card{display:block;max-width:720px;padding:1.4rem 1.6rem;border:2px solid var(--line);border-radius:20px;background:var(--zinc);text-decoration:none}
+.press-card:hover{text-decoration:underline;text-underline-offset:3px}
+.press-card strong{display:block;font:800 1.35rem/1.2 var(--display)}
+.press-card span{display:block;margin-top:.65rem;color:var(--soft)}
 @media (max-width:480px){.services{grid-template-columns:1fr}.logo{font-size:1.15rem}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -153,6 +158,16 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem
   <section class="match">
     <div class="wrap">
       <h2>Retransmission des matchs de l’ASSE</h2>
+    </div>
+  </section>
+
+  <section class="press">
+    <div class="wrap">
+      <h2>La Frite dans la presse</h2>
+      <a class="press-card" href="https://www.le-pays.fr/roanne-42300/economie/a-roanne-le-boulevard-de-belgique-retrouve-la-frite-le-bar-a-ouvert-ses-portes-ce-samedi-apres-six-mois-de-fermeture_15072527/" target="_blank" rel="noopener noreferrer">
+        <strong>À Roanne, le boulevard de Belgique retrouve La Frite</strong>
+        <span>Le Pays Roannais raconte la réouverture du bar après six mois de fermeture. Lire l’article →</span>
+      </a>
     </div>
   </section>
 
